@@ -1,5 +1,5 @@
 # AWS-ECS
-![logo](https://github.com/crancurello/containers_aws/blob/master/images/logo.png)
+![logo](https://github.com/raqmxo/images/ecs-docker.jpg)
 
 # Bienvenido al workshop de containers en AWS
 

@@ -1,7 +1,6 @@
 # AWS-ECS
-![logo](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/ecs-docker.jpg)
-
-![logo2](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/Ike_YaaB_Fisico.png)
+# ![logo](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/ecs-docker.jpg)
+![logox](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/IkeYaabFisico.png)
 
 # Bienvenido al workshop de Infraestructra Ike
 

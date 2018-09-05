@@ -9,15 +9,16 @@
 En este workshop iremos armando un ambiente de Infraestructura similar al utilizado en el proyecto YaaB. Para esto, es necesario entender el uso de diferentes tecnologías utilizadas en los ambientes de QA y Productivos. Entre otras, se cuenta con:
 
 - Docker
-  _ Contenedores
-  _ Imágenes
-  _ DockerFile
+  - Contenedores
+  - Imágenes
+  - DockerFile
 
 - Cómputo en la nube (Amazon Web Services AWS)
-  _ Máquinas virtuales EC2
-  _ Clusters ECS
-  _ Balanceadores de Aplicaciones ALB
-  _ Gateway de Applicaciones AppGW
+  - Máquinas virtuales EC2
+  - Clusters ECS
+  - Balanceadores de Aplicaciones ALB
+  - Gateway de Applicaciones AppGW
+  
 ## 1) ¡Todo acerca de containers!
 
 Te iremos guiando sobre lo básico en containers: desde instalar y configurar docker en tu laptop, ejecutar contenedores de forma local, hasta implementarlos en AWS.

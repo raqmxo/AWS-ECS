@@ -119,51 +119,6 @@ Si ejecuta este comando `docker login`, otros usuarios del sistema podrán ver l
 
     docker push aws_account_id.dkr.ecr.us-east-1.amazonaws.com/hello-world
 
-## Pasos siguientes
+## Proceda a la siguiente etapa del taller
 
-Cuando termine de insertar la imagen, puede usar la imagen en sus definiciones de tareas de Amazon ECS, que puede utilizar para ejecutar tareas.
-
-
-## Registro de una definición de tarea con la imagen de hello-world
-
-Crear un archivo llamado `hello-world-task-def.json` con los siguientes contenidos, sustituyendo la `repositoryUri` de la sección anterior con el campo image.
-
-    {
-        "family": "hello-world",
-        "containerDefinitions": [
-            {
-                "name": "hello-world",
-                "image": "aws_account_id.dkr.ecr.us-east-1.amazonaws.com/hello-world",
-                "cpu": 10,
-                "memory": 500,
-                "portMappings": [
-                    {
-                        "containerPort": 80,
-                        "hostPort": 80
-                    }
-                ],
-                "entryPoint": [
-                    "/usr/sbin/apache2",
-                    "-D",
-                    "FOREGROUND"
-                ],
-                "essential": true
-            }
-        ]
-    }
-
-Registro de una definición de tarea con el archivo `hello-world-task-def.json`
-
-    aws ecs register-task-definition --cli-input-json file://hello-world-task-def.json
-
-La definición de tarea está registrada en la familia hello-world, tal y como se define en el archivo JSON.
-
-Ejecución de una tarea con la definición de tareas de hello-world
-
-    importante
-
-    Antes de poder ejecutar tareas en Amazon ECS, debe lanzar instancias de contenedor en un clúster predeterminado. Para obtener más información acerca de cómo configurar y lanzar las instancias de contenedor, consulte Configuración con Amazon ECS y Introducción al uso de Amazon ECS con Fargate
-
-Use el siguiente comando de AWS CLI para ejecutar una tarea con la definición de tareas de hello-world.
-
-    aws ecs run-task --task-definition hello-world
+[Ejecutar una Imágen en tú Laptop](https://github.com/raqmxo/AWS-ECS/blob/master/Docs/lab03/README.md)

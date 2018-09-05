@@ -25,7 +25,7 @@ Te iremos guiando sobre lo básico en containers: desde instalar y configurar do
 
 ## Por favor, ejecuta este workshop en el siguiente orden:
 
-* [1. Instalación y Configuración de Docker](https://github.com/raqmxo/AWS-ECS/blob/master/Docs/lab01-docker-install)
+* [1. Instalación y Configuración de Docker](https://github.com/raqmxo/AWS-ECS/blob/master/Docs/lab01/README.md)
 
 * [2. Crear tu primer imagen de Docker](https://github.com/raqmxo/containers_aws/tree/master/02-CreatingDockerImage)
 

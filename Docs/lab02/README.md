@@ -115,7 +115,7 @@ Importante
 
 Si ejecuta este comando `docker login`, otros usuarios del sistema podrán ver la cadena del comando en una pantalla de lista de procesos (`ps -e`). Como el comando `docker login` contiene las credenciales de autenticación, existe el riesgo de que otros usuarios de su sistema puedan verlas y usarlas para obtener acceso de recepción y envío a sus repositorios. Si no se encuentra en un sistema seguro, deberá considerar este riesgo e iniciar sesión de forma interactiva omitiendo la opción `-p password` y después introducir la contraseña cuando se le solicite.
 
-## Envíe la imagen a Amazon ECR con el valor `repositoryUri` valor del paso anterior.
+## Envíe la imagen a Amazon ECR con el valor del `repositoryUri` del paso anterior.
 
     docker push aws_account_id.dkr.ecr.us-east-1.amazonaws.com/hello-world
 

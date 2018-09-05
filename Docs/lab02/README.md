@@ -80,9 +80,9 @@ Amazon ECR es un servicio administrado de registro de Docker de AWS. Los cliente
 > Nota:
 > Esta sección requiere la AWS CLI. Si no ha instalado la AWS CLI en su sistema, consulte [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) en la sección: `Command Line Interface` de la Guía del usuario.
 
-Etiquetado de la imagen y envío a Amazon ECR
+## Etiquetado de la imagen y envío a Amazon ECR
 
-Cree un repositorio de Amazon ECR para almacenar su imagen hello-world. En los resultados, anote el repositoryUri.
+Cree un repositorio de Amazon ECR para almacenar su imagen `hello-world`. En los resultados, anote el `repositoryUri`.
 
     aws ecr create-repository --repository-name hello-world
 
@@ -98,39 +98,35 @@ Salida:
         }
     }
 
-Etiquete la imagen de hello-world con el valor de repositoryUri del paso anterior.
+Etiquete la imagen de `hello-world` con el valor del repositoryUri del paso anterior.
 
     docker tag hello-world aws_account_id.dkr.ecr.us-east-1.amazonaws.com/hello-world
 
-Ejecute el comando aws ecr get-login --no-include-email para obtener el comando de autenticación de inicio de sesión en Docker para su registro.
+Ejecute el comando `aws ecr get-login --no-include-email` para obtener el comando de autenticación de inicio de sesión en Docker para su registro.
 
-    nota
-
-    El comando get-login está disponible en AWS CLI a partir de 1.9.15; sin embargo, le recomendamos la versión 1.11.91 o posterior para las versiones recientes de Docker (17.06 o posterior). Puede comprobar su versión de AWS CLI con el comando aws --version. Si utiliza Docker versión 17.06 o posterior, incluya la opción --no-include-email después de get-login. Si recibe un error Unknown options: --no-include-email, instale la última versión de AWS CLI. Para obtener más información, consulte Installing the AWS Command Line Interface en la AWS Command Line Interface Guía del usuario.
+> Nota:
+> El comando `get-login` está disponible en AWS CLI a partir de 1.9.15; sin embargo, le recomendamos la versión 1.11.91 o posterior para las versiones recientes de Docker (17.06 o posterior). Puede comprobar su versión de AWS CLI con el comando `aws --version`. Si utiliza Docker versión 17.06 o posterior, incluya la opción `--no-include-email` después de `get-login`. Si recibe un error `Unknown options: --no-include-email`, instale la última versión de AWS CLI. Para obtener más información, consulte [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) en la Guía del usuario.
 
     aws ecr get-login --no-include-email
 
-Ejecute el comando docker login que se devolvió en el paso anterior. Este comando proporciona un token de autorización que es válido durante 12 horas.
+Ejecute el comando `docker login` que se devolvió en el paso anterior. Este comando proporciona un token de autorización que es válido *durante 12 horas*.
 
-importante
+Importante
 
-Si ejecuta este comando docker login, otros usuarios del sistema podrán ver la cadena del comando en una pantalla de lista de procesos (ps -e). Como el comando docker login contiene las credenciales de autenticación, existe el riesgo de que otros usuarios de su sistema puedan verlas y usarlas para obtener acceso de recepción y envío a sus repositorios. Si no se encuentra en un sistema seguro, deberá considerar este riesgo e iniciar sesión de forma interactiva omitiendo la opción -p password y después introducir la contraseña cuando se le solicite.
+Si ejecuta este comando `docker login`, otros usuarios del sistema podrán ver la cadena del comando en una pantalla de lista de procesos (`ps -e`). Como el comando `docker login` contiene las credenciales de autenticación, existe el riesgo de que otros usuarios de su sistema puedan verlas y usarlas para obtener acceso de recepción y envío a sus repositorios. Si no se encuentra en un sistema seguro, deberá considerar este riesgo e iniciar sesión de forma interactiva omitiendo la opción `-p password` y después introducir la contraseña cuando se le solicite.
 
-Envíe la imagen a Amazon ECR con el valor repositoryUri valor del paso anterior.
+## Envíe la imagen a Amazon ECR con el valor `repositoryUri` valor del paso anterior.
 
     docker push aws_account_id.dkr.ecr.us-east-1.amazonaws.com/hello-world
 
-Pasos siguientes
+## Pasos siguientes
 
 Cuando termine de insertar la imagen, puede usar la imagen en sus definiciones de tareas de Amazon ECS, que puede utilizar para ejecutar tareas.
 
-    nota
 
-    Esta sección requiere la AWS CLI. Si no ha instalado la AWS CLI en su sistema, consulte Installing the AWS Command Line Interface en la AWS Command Line Interface Guía del usuario.
+## Registro de una definición de tarea con la imagen de hello-world
 
-Registro de una definición de tarea con la imagen de hello-world
-
-Crear un archivo llamado hello-world-task-def.json con los siguientes contenidos, sustituyendo la repositoryUri de la sección anterior con el campo image.
+Crear un archivo llamado `hello-world-task-def.json` con los siguientes contenidos, sustituyendo la `repositoryUri` de la sección anterior con el campo image.
 
     {
         "family": "hello-world",
@@ -156,7 +152,7 @@ Crear un archivo llamado hello-world-task-def.json con los siguientes contenidos
         ]
     }
 
-Registro de una definición de tarea con el archivo hello-world-task-def.json
+Registro de una definición de tarea con el archivo `hello-world-task-def.json`
 
     aws ecs register-task-definition --cli-input-json file://hello-world-task-def.json
 

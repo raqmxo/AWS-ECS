@@ -11,9 +11,9 @@ En este workshop iremos armando un ambiente de Infraestructura similar al utiliz
 | first header    | Second header |
 | --- | --- |
 |- Docker         | ![ikelogo](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/ikelogo.png) |
-|  - Contenedores | --- |
-|  - Imágenes     | --- |
-|  - DockerFile   | --- |
+|  - Contenedores |  
+|  - Imágenes     |
+|  - DockerFile   |
 
 - Cómputo en la nube (Amazon Web Services AWS)
   - Máquinas virtuales EC2

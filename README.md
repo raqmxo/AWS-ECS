@@ -19,7 +19,7 @@ En este workshop iremos armando un ambiente de Infraestructura similar al utiliz
   - Balanceadores de Aplicaciones ALB
   - Gateway de Applicaciones AppGW
 
-## ¡Todo acerca de containers!
+## ¡Todo acerca de contenedores!
 
 Te iremos guiando sobre lo básico en containers: desde instalar y configurar docker en tu laptop, ejecutar contenedores de forma local, hasta implementarlos en AWS.
 

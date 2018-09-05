@@ -1,1 +1,1 @@
-# Instalación de Docker en tu LapTop
+# Instalación y Configuración de Docker

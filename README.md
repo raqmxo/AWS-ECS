@@ -27,8 +27,8 @@ Te iremos guiando sobre lo básico en containers: desde instalar y configurar do
 
 * [1. Instalación y Configuración de Docker](https://github.com/raqmxo/AWS-ECS/blob/master/Docs/lab01/README.md)
 
-* [2. Crear tu primer imagen de Docker](https://github.com/raqmxo/containers_aws/tree/master/02-CreatingDockerImage)
+* [2. Crear tu primer imagen de Docker](https://github.com/raqmxo/AWS-ECS/blob/master/Docs/lab02/README.md)
 
-* [3. Ejecutar una Imágen en tú Laptop](https://github.com/raqmxo/containers_aws/tree/master/03-DeployEcsCluster)
+* [3. Ejecutar una Imágen en tú Laptop](https://github.com/raqmxo/AWS-ECS/blob/master/Docs/lab03/README.md)
 
-* [4. Ejecutar un contenedor en un cluster de AWS ECS -Elastic Container Service-](https://github.com/crancurello/containers_aws/tree/master/03-DeployEcsCluster)
+* [4. Ejecutar un contenedor en un cluster de AWS ECS -Elastic Container Service-](https://github.com/crancurello/containers_aws/AWS-ECS/blob/master/Docs/lab04/README.md)

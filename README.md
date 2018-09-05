@@ -10,7 +10,7 @@ En este workshop iremos armando un ambiente de Infraestructura similar al utiliz
 
 | first header    | Second header |
 | --- | --- |
-|- Docker         | --- |
+|- Docker         | ![logox](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/ikelogo.png) |
 |  - Contenedores | --- |
 |  - Imágenes     | --- |
 |  - DockerFile   | --- |

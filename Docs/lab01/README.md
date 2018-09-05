@@ -11,13 +11,13 @@ En este laboratorio mostramos las instrucciones para instalarlo en una máquina 
 Ejecute el siguiente comando desde una terminal de su equipo:
 
 ```
-$ docker --version
+docker --version
 ```
 
 Si ud. no obtiene una salida similar a la siguiente, es probable que requiera descargar e instalar el producto.
 
 ```
-$ docker --version
+docker --version
 Docker version 18.06.1-ce, build e68fc7a
 ```
 

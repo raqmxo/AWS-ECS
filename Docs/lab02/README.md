@@ -12,7 +12,7 @@ Cree un archivo denominado `Dockerfile`. Un `Dockerfile` es un manifiesto que de
 
     touch Dockerfile
 
-Editar el Dockerfile que acaba de crear y añadir el siguiente contenido.
+## Editar el archivo `Dockerfile` que acaba de crear y añadir el siguiente contenido.
 
     FROM ubuntu:12.04
 
@@ -34,9 +34,9 @@ Editar el Dockerfile que acaba de crear y añadir el siguiente contenido.
 
     CMD ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
 
-Este Dockerfile utiliza la imagen Ubuntu 12.04. Las instrucciones RUN actualizan la caché del paquete, instalan algunos paquetes de software para el servidor web y, a continuación, escriben el contenido "Hello World!" en la raíz de documentos del servidor web. El folleto EXPOSE expone el puerto 80 en el contenedor y las instrucciones CMD inician el servidor web.
+Este Dockerfile utiliza la imagen Ubuntu 12.04. Las instrucciones `RUN` actualizan la caché del paquete, instalan algunos paquetes de software para el servidor web y, a continuación, escriben el contenido `"Hello World!"` en la raíz de documentos del servidor web. La sentencia `EXPOSE` expone el puerto 80 en el contenedor y las instrucciones `CMD` inician el servidor web.
 
-Cree la imagen Docker desde el Dockerfile.
+## Cree la imagen Docker desde el Dockerfile.
 
     nota
 

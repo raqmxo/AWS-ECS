@@ -38,8 +38,7 @@ Este Dockerfile utiliza la imagen Ubuntu 12.04. Las instrucciones `RUN` actualiz
 
 ## Cree la imagen Docker desde el Dockerfile.
 
-nota
-
+> Nota:
 > Algunas versiones de Docker pueden requerir la ruta completa a su Dockerfile en el siguiente comando en lugar de la ruta relativa que se muestra a continuación.
 
     docker build -t hello-world .
@@ -57,7 +56,7 @@ Ejecute la nueva imagen. La opción `-p 80:80` asigna el puerto 80 expuesto en e
 
     docker run -p 80:80 hello-world
 
-> Nota
+> Nota:
 > La salida desde el servidor web Apache se muestra en la ventana de la terminal. Puede hacer caso omiso del mensaje "Could not reliably determine the server's fully qualified domain name"
 
 Abra un navegador y encuentre el servidor que está ejecutando Docker y alojando su contenedor.

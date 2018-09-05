@@ -1,11 +1,9 @@
 # Iké Asistencia - Infraestructura AWS-ECS
 
 <!--
-# ![logo](https://raw.githubusercontent.com/raqmxo/AWS-ECS/images/ecs-docker.jpg)
-![logox](https://raw.githubusercontent.com/raqmxo/AWS-ECS/images/IkeYaabFisico.png)
+# ![logo](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/ecs-docker.jpg)
+![logox](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/IkeYaabFisico.png)
 -->
-![logox](https://raw.githubusercontent.com/raqmxo/AWS-ECS/images/IkeYaabFisico.png)
-
 ## Bienvenido al workshop de Infraestructra Ike
 
 En este workshop iremos armando un ambiente de Infraestructura similar al utilizado en el proyecto YaaB. Para esto, es necesario entender el uso de diferentes tecnologías utilizadas en los ambientes de QA y Productivos. Entre otras, se cuenta con:

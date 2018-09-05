@@ -1,8 +1,9 @@
 # Iké Asistencia - Infraestructura AWS-ECS
 
+<!--
 # ![logo](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/ecs-docker.jpg)
 ![logox](https://raw.githubusercontent.com/raqmxo/AWS-ECS/master/images/IkeYaabFisico.png)
-
+-->
 # Bienvenido al workshop de Infraestructra Ike
 
 ## 1) ¡Todo acerca de containers!

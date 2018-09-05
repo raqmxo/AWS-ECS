@@ -44,7 +44,7 @@ nota
 
     docker build -t hello-world .
 
-Ejecute docker images para comprobar que la imagen se haya creado correctamente.
+Ejecute `docker images` para comprobar que la imagen se haya creado correctamente.
 
     docker images --filter reference=hello-world
 
@@ -53,12 +53,11 @@ Salida:
     REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
     hello-world         latest              e9ffedc8c286        4 minutes ago       258MB
 
-Ejecute la nueva imagen. La opción `-p 80:80 asigna el puerto 80 expuesto en el contenedor al puerto 80 del sistema de host. Para obtener más información acerca de docker run, consulte [Docker run reference](https://docs.docker.com/engine/reference/run/).
+Ejecute la nueva imagen. La opción `-p 80:80` asigna el puerto 80 expuesto en el contenedor al puerto 80 del sistema de host. Para obtener más información acerca de docker run, consulte [Docker run reference](https://docs.docker.com/engine/reference/run/).
 
     docker run -p 80:80 hello-world
 
-nota
-
+> Nota
 > La salida desde el servidor web Apache se muestra en la ventana de la terminal. Puede hacer caso omiso del mensaje "Could not reliably determine the server's fully qualified domain name"
 
 Abra un navegador y encuentre el servidor que está ejecutando Docker y alojando su contenedor.

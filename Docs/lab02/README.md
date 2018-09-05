@@ -1,10 +1,14 @@
 # Crear tu primer imagen de Docker
 
+## Ok, pero qué es Docker?
+
+QUE ES DOCKER EN 5 PARRAFOS!!!
+
 Las definiciones de tareas de Amazon ECS usan imágenes de Docker para lanzar contenedores en las instancias de contenedor de sus clústeres. En esta sección, puede crear una imagen Docker de una aplicación web simple y probarla en su sistema local o instancia de EC2. Luego puede enviar la imagen al registro de contenedor (como Amazon ECR o Docker Hub) para que pueda utilizarla en la definición de tareas de ECS.
 
-Creación de una imagen Docker de una aplicación web simple
+##Creación de una imagen Docker de una aplicación web simple
 
-    Cree un archivo denominado Dockerfile. Un Dockerfile es un manifiesto que describe la imagen base para su imagen Docker y qué desea instalar y que se ejecute en ella. Para obtener más información acerca de los archivos Docker, consulte Docker Reference.
+    Cree un archivo denominado `Dockerfile`. Un `Dockerfile` es un manifiesto que describe la imagen base para su imagen Docker y qué desea instalar y que se ejecute en ella. Para obtener más información acerca de los archivos Docker, consulte [Docker Reference](https://docs.docker.com/engine/reference/builder/).
 
     touch Dockerfile
 

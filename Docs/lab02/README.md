@@ -78,7 +78,7 @@ Detenga el contenedor de Docker presionando la combinación de teclas `Ctrl + c`
 Amazon ECR es un servicio administrado de registro de Docker de AWS. Los clientes puedes usar la CLI de Docker que ya conocen para insertar, extraer y administrar imágenes. Para obtener información detallada sobre el producto de Amazon ECR, casos prácticos de clientes destacados y preguntas frecuentes, consulte las páginas de detalle del producto de [Amazon EC2 Container Registry](https://aws.amazon.com/ecr/).
 
 > Nota:
-> Esta sección requiere la AWS CLI. Si no ha instalado la AWS CLI en su sistema, consulte Installing the AWS Command Line Interface en la AWS Command Line Interface Guía del usuario.
+> Esta sección requiere la AWS CLI. Si no ha instalado la AWS CLI en su sistema, consulte [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) en la sección: `Command Line Interface` de la Guía del usuario.
 
 Etiquetado de la imagen y envío a Amazon ECR
 

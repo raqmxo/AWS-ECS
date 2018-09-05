@@ -8,10 +8,11 @@
 
 En este workshop iremos armando un ambiente de Infraestructura similar al utilizado en el proyecto YaaB. Para esto, es necesario entender el uso de diferentes tecnologías utilizadas en los ambientes de QA y Productivos. Entre otras, se cuenta con:
 
-- Docker
-  - Contenedores
-  - Imágenes
-  - DockerFile
+| first header | Second header |
+|- Docker | --- |
+|  - Contenedores | --- |
+|  - Imágenes | --- |
+|  - DockerFile | --- |
 
 - Cómputo en la nube (Amazon Web Services AWS)
   - Máquinas virtuales EC2

@@ -51,11 +51,11 @@ Si todo está en orden, debera observar una salida similar a la siguiente:
 
 ```
 $ docker info
-Containers: 2
- Running: 2
+Containers: 0
+ Running: 0
  Paused: 0
  Stopped: 0
-Images: 2
+Images: 0
 Server Version: 18.06.1-ce
 Storage Driver: overlay2
  Backing Filesystem: extfs
@@ -77,3 +77,7 @@ Insecure Registries:
  127.0.0.0/8
 Live Restore Enabled: false
 ```
+
+## Proceda a la siguiente etapa del taller
+
+[Crear tu primer imagen de Docker](https://github.com/raqmxo/AWS-ECS/blob/master/Docs/lab02/README.md)

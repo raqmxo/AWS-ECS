@@ -38,9 +38,9 @@ Este Dockerfile utiliza la imagen Ubuntu 12.04. Las instrucciones `RUN` actualiz
 
 ## Cree la imagen Docker desde el Dockerfile.
 
-    nota
+nota
 
-    Algunas versiones de Docker pueden requerir la ruta completa a su Dockerfile en el siguiente comando en lugar de la ruta relativa que se muestra a continuación.
+> Algunas versiones de Docker pueden requerir la ruta completa a su Dockerfile en el siguiente comando en lugar de la ruta relativa que se muestra a continuación.
 
     docker build -t hello-world .
 

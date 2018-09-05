@@ -63,25 +63,24 @@ Abra un navegador y encuentre el servidor que está ejecutando Docker y alojando
 
 Si utiliza una instancia de EC2, este es el valor DNS público para el servidor, que es la misma dirección que utiliza para conectarse a la instancia con SSH. Asegúrese de que el grupo de seguridad para la instancia permite el tráfico entrante en el puerto 80.
 
-Si ejecuta Docker de forma local, dirija el navegador a http://localhost/.
+Si ejecuta Docker de forma local, dirija el navegador a [http://localhost/](http://localhost/).
 
 Si utiliza una máquina Docker en un equipo Windows o Mac, encuentre la dirección IP del VirtualBox VM que aloja Docker con el comando docker-machine y sustituya el nombre de la máquina con el nombre de la máquina docker que utilice.
 
     docker-machine ip machine-name
 
-Debería ver una página web que diga "Hello, World!" statement.
+Debería ver una página web que diga `"Hello, World!"`.
 
-Detenga el contenedor de Docker escribiendo Ctrl + c.
+Detenga el contenedor de Docker presionando la combinación de teclas `Ctrl + c`.
 
-(Opcional) Envíe su imagen a Amazon EC2 Container Registry.
+## (Opcional) Envíe su imagen a Amazon EC2 Container Registry.
 
 Amazon ECR es un servicio administrado de registro de Docker de AWS. Los clientes puedes usar la CLI de Docker que ya conocen para insertar, extraer y administrar imágenes. Para obtener información detallada sobre el producto de Amazon ECR, casos prácticos de clientes destacados y preguntas frecuentes, consulte las páginas de detalle del producto de Amazon EC2 Container Registry.
 
-    nota
+> Nota:
+> Esta sección requiere la AWS CLI. Si no ha instalado la AWS CLI en su sistema, consulte Installing the AWS Command Line Interface en la AWS Command Line Interface Guía del usuario.
 
-    Esta sección requiere la AWS CLI. Si no ha instalado la AWS CLI en su sistema, consulte Installing the AWS Command Line Interface en la AWS Command Line Interface Guía del usuario.
-
-Etiquetado de la imagen y envío a Amazon ECR
+### Etiquetado de la imagen y envío a Amazon ECR
 
 Cree un repositorio de Amazon ECR para almacenar su imagen hello-world. En los resultados, anote el repositoryUri.
 
